@@ -35,5 +35,19 @@ public class Database
     {
         return sessions;
     }
+/*
+    public static void Map<Long, Movie> addMovie(Long movieId, Movie movie)
+    {
+        movies.put(movieId, movie);
+    }*/
+
+	public static void addMovie(java.lang.Long movieId, webproject.filmreview.Models.Movie movieToAdd) {
+        movies.put(movieId, movieToAdd);
+	}
+
+    public static void addSeries(java.lang.Long seriesId, webproject.filmreview.Models.Series seriesToAdd) {
+        series.put(seriesId, seriesToAdd);
+	}
+
 
 }
